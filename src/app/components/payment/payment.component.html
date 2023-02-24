@@ -1,0 +1,79 @@
+<div class="card text-center mt-5" >
+    <div class="card-header" >
+      Payment 
+    </div>
+    <div class="table">
+      <tr>
+        <th>Number Of Days To Rent: {{rentalDay}}</th>
+      </tr>
+      <tr>
+        <th>Total Amount Payable: {{totalAmountInfo}}  </th>
+      </tr>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+
+
+    <div class="col-md-6 mb-3">
+      <label>Cardholder's Name</label>
+      <input class="form-control" 
+      type="text" 
+      placeholder="" 
+      maxlength="40" 
+      aria-label="default input example"
+      style="text-align: center" required>
+      <small class="text-muted">Cardholder's Name</small>
+    </div>
+  
+  
+    <div class="col-md-6 mb-3">
+      <label for="creditCardNumber">Card Number</label>
+      <input class="form-control" 
+      type="text" 
+      placeholder="xxxx-xxxx-xxxx-xxxx" 
+      name="number" required
+      aria-label="default input example" 
+      style="text-align: center"
+      maxlength="16" 
+      id="CardNumber" 
+      type="tel" />
+    </div>
+  
+
+    <div class="col-md-3 mb-3">
+      <label for="expirationDate">Expiration Date</label>
+      <input class="form-control"
+       type="text" 
+       placeholder=""
+        aria-label="default input example" 
+        style="text-align: center"
+        id="expirationDate"
+         maxlength="5" />
+      <small class="text-muted">MM/YYYY</small>
+    </div>
+
+
+    <div class="col-md-3 mb-3">
+      <label for="securityCode">CVV</label>
+      <input class="form-control" 
+      type="text" 
+      placeholder="***" 
+      aria-label="default input example" 
+      id="securityCode"
+      maxlength="3" />
+      <small class="text-muted">Security Code</small>
+    </div>
+
+
+  </div>
+  
+  <div class="col-12 d-flex justify-content-end">
+    <button type="submit"
+     class="btn btn-outline-dark" 
+     (click)="add()">Pay 
+    </button>
+    
+  </div>
