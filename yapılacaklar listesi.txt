@@ -1,0 +1,6 @@
+1-> veritabanından carimages carId -> BrandId olarak değiştirildi Front-End de güncellendi. 
+2-> Araba detay kısmı halledildi
+3->Car componenttte brandi yazdırmak için oluşturduğumuz döngüyü commentledim çünkü aynı datayı birçok kez döndürüyor.
+4-> popper hatası için önce jquery sonra popper sonra bootstrap yüklenmeli user kısmı ile ilgili
+5->details kısmı gelmiyor
+5->
